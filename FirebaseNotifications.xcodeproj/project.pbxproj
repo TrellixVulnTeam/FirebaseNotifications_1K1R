@@ -14,6 +14,9 @@
 		CD7E9555200D5960001F6475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7E9553200D5960001F6475 /* LaunchScreen.storyboard */; };
 		CD7E9560200D5960001F6475 /* FirebaseNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E955F200D5960001F6475 /* FirebaseNotificationsTests.swift */; };
 		CD7E956B200D5960001F6475 /* FirebaseNotificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E956A200D5960001F6475 /* FirebaseNotificationsUITests.swift */; };
+		CD7E957D200D5E99001F6475 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E957C200D5E99001F6475 /* Product.swift */; };
+		CD7E957F200D5EDD001F6475 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E957E200D5EDD001F6475 /* ProductCell.swift */; };
+		CD7E9581200D64DA001F6475 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E9580200D64DA001F6475 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		CD7E9566200D5960001F6475 /* FirebaseNotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseNotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7E956A200D5960001F6475 /* FirebaseNotificationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNotificationsUITests.swift; sourceTree = "<group>"; };
 		CD7E956C200D5960001F6475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7E957C200D5E99001F6475 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CD7E957E200D5EDD001F6475 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		CD7E9580200D64DA001F6475 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,11 @@
 		CD7E9549200D5960001F6475 /* FirebaseNotifications */ = {
 			isa = PBXGroup;
 			children = (
-				CD7E954A200D5960001F6475 /* AppDelegate.swift */,
-				CD7E954C200D5960001F6475 /* ViewController.swift */,
-				CD7E954E200D5960001F6475 /* Main.storyboard */,
-				CD7E9551200D5960001F6475 /* Assets.xcassets */,
-				CD7E9553200D5960001F6475 /* LaunchScreen.storyboard */,
 				CD7E9556200D5960001F6475 /* Info.plist */,
+				CD7E9579200D5A0B001F6475 /* Model */,
+				CD7E957A200D5A0E001F6475 /* View */,
+				CD7E957B200D5A12001F6475 /* Controller */,
+				CD7E9578200D5A04001F6475 /* Service */,
 			);
 			path = FirebaseNotifications;
 			sourceTree = "<group>";
@@ -123,6 +128,42 @@
 				CD7E956C200D5960001F6475 /* Info.plist */,
 			);
 			path = FirebaseNotificationsUITests;
+			sourceTree = "<group>";
+		};
+		CD7E9578200D5A04001F6475 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD7E9580200D64DA001F6475 /* AlertService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD7E9579200D5A0B001F6475 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD7E957C200D5E99001F6475 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD7E957A200D5A0E001F6475 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD7E954E200D5960001F6475 /* Main.storyboard */,
+				CD7E9553200D5960001F6475 /* LaunchScreen.storyboard */,
+				CD7E9551200D5960001F6475 /* Assets.xcassets */,
+				CD7E957E200D5EDD001F6475 /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD7E957B200D5A12001F6475 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD7E954A200D5960001F6475 /* AppDelegate.swift */,
+				CD7E954C200D5960001F6475 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD7E954D200D5960001F6475 /* ViewController.swift in Sources */,
+				CD7E957F200D5EDD001F6475 /* ProductCell.swift in Sources */,
 				CD7E954B200D5960001F6475 /* AppDelegate.swift in Sources */,
+				CD7E957D200D5E99001F6475 /* Product.swift in Sources */,
+				CD7E9581200D64DA001F6475 /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
