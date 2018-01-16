@@ -14,6 +14,10 @@
 		CD288B33200D8A9700A97011 /* ProductsSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B32200D8A9700A97011 /* ProductsSnapshot.swift */; };
 		CD288B35200D8D0600A97011 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B34200D8D0600A97011 /* ProductsService.swift */; };
 		CD288B37200DAEFA00A97011 /* FirebaseMessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B36200DAEFA00A97011 /* FirebaseMessagingService.swift */; };
+		CD288B3F200DD8D900A97011 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B3E200DD8D900A97011 /* NotificationService.swift */; };
+		CD288B43200DD8D900A97011 /* Notif Service Ext.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD288B3C200DD8D900A97011 /* Notif Service Ext.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD288B49200DDB1800A97011 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B48200DDB1800A97011 /* DownloadService.swift */; };
+		CD288B4A200DDBED00A97011 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B48200DDB1800A97011 /* DownloadService.swift */; };
 		CD7E954B200D5960001F6475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E954A200D5960001F6475 /* AppDelegate.swift */; };
 		CD7E954D200D5960001F6475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E954C200D5960001F6475 /* ViewController.swift */; };
 		CD7E9550200D5960001F6475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7E954E200D5960001F6475 /* Main.storyboard */; };
@@ -29,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CD288B41200DD8D900A97011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD7E953F200D5960001F6475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD288B3B200DD8D900A97011;
+			remoteInfo = "Notif Service Ext";
+		};
 		CD7E955C200D5960001F6475 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD7E953F200D5960001F6475 /* Project object */;
@@ -44,6 +55,20 @@
 			remoteInfo = FirebaseNotifications;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD288B47200DD8D900A97011 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD288B43200DD8D900A97011 /* Notif Service Ext.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		03D6C89A3CE5A529BD63C2A0 /* Pods-FirebaseNotificationsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseNotificationsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseNotificationsTests/Pods-FirebaseNotificationsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +87,10 @@
 		CD288B32200D8A9700A97011 /* ProductsSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSnapshot.swift; sourceTree = "<group>"; };
 		CD288B34200D8D0600A97011 /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
 		CD288B36200DAEFA00A97011 /* FirebaseMessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMessagingService.swift; sourceTree = "<group>"; };
+		CD288B3C200DD8D900A97011 /* Notif Service Ext.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Notif Service Ext.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD288B3E200DD8D900A97011 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		CD288B40200DD8D900A97011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD288B48200DDB1800A97011 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		CD7E9547200D5960001F6475 /* FirebaseNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7E954A200D5960001F6475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7E954C200D5960001F6475 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +110,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CD288B39200DD8D900A97011 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD7E9544200D5960001F6475 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,10 +167,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CD288B3D200DD8D900A97011 /* Notif Service Ext */ = {
+			isa = PBXGroup;
+			children = (
+				CD288B3E200DD8D900A97011 /* NotificationService.swift */,
+				CD288B40200DD8D900A97011 /* Info.plist */,
+			);
+			path = "Notif Service Ext";
+			sourceTree = "<group>";
+		};
 		CD7E953E200D5960001F6475 = {
 			isa = PBXGroup;
 			children = (
 				CD7E9549200D5960001F6475 /* FirebaseNotifications */,
+				CD288B3D200DD8D900A97011 /* Notif Service Ext */,
 				CD7E955E200D5960001F6475 /* FirebaseNotificationsTests */,
 				CD7E9569200D5960001F6475 /* FirebaseNotificationsUITests */,
 				CD7E9548200D5960001F6475 /* Products */,
@@ -149,6 +195,7 @@
 				CD7E9547200D5960001F6475 /* FirebaseNotifications.app */,
 				CD7E955B200D5960001F6475 /* FirebaseNotificationsTests.xctest */,
 				CD7E9566200D5960001F6475 /* FirebaseNotificationsUITests.xctest */,
+				CD288B3C200DD8D900A97011 /* Notif Service Ext.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +240,7 @@
 				CD288B30200D846700A97011 /* FirebaseDatabaseService.swift */,
 				CD288B34200D8D0600A97011 /* ProductsService.swift */,
 				CD288B36200DAEFA00A97011 /* FirebaseMessagingService.swift */,
+				CD288B48200DDB1800A97011 /* DownloadService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -229,6 +277,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CD288B3B200DD8D900A97011 /* Notif Service Ext */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD288B44200DD8D900A97011 /* Build configuration list for PBXNativeTarget "Notif Service Ext" */;
+			buildPhases = (
+				CD288B38200DD8D900A97011 /* Sources */,
+				CD288B39200DD8D900A97011 /* Frameworks */,
+				CD288B3A200DD8D900A97011 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Notif Service Ext";
+			productName = "Notif Service Ext";
+			productReference = CD288B3C200DD8D900A97011 /* Notif Service Ext.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CD7E9546200D5960001F6475 /* FirebaseNotifications */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD7E956F200D5960001F6475 /* Build configuration list for PBXNativeTarget "FirebaseNotifications" */;
@@ -239,10 +304,12 @@
 				CD7E9545200D5960001F6475 /* Resources */,
 				B09B2D5495245FD64B5B9077 /* [CP] Embed Pods Frameworks */,
 				1C69C64A4FD769641DEE2CA2 /* [CP] Copy Pods Resources */,
+				CD288B47200DD8D900A97011 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CD288B42200DD8D900A97011 /* PBXTargetDependency */,
 			);
 			name = FirebaseNotifications;
 			productName = FirebaseNotifications;
@@ -301,6 +368,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Kenton D. Raiford";
 				TargetAttributes = {
+					CD288B3B200DD8D900A97011 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					CD7E9546200D5960001F6475 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -341,11 +412,19 @@
 				CD7E9546200D5960001F6475 /* FirebaseNotifications */,
 				CD7E955A200D5960001F6475 /* FirebaseNotificationsTests */,
 				CD7E9565200D5960001F6475 /* FirebaseNotificationsUITests */,
+				CD288B3B200DD8D900A97011 /* Notif Service Ext */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CD288B3A200DD8D900A97011 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD7E9545200D5960001F6475 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -512,6 +591,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CD288B38200DD8D900A97011 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD288B3F200DD8D900A97011 /* NotificationService.swift in Sources */,
+				CD288B4A200DDBED00A97011 /* DownloadService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD7E9543200D5960001F6475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +614,7 @@
 				CD7E9581200D64DA001F6475 /* AlertService.swift in Sources */,
 				CD288B31200D846700A97011 /* FirebaseDatabaseService.swift in Sources */,
 				CD288B35200D8D0600A97011 /* ProductsService.swift in Sources */,
+				CD288B49200DDB1800A97011 /* DownloadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +637,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CD288B42200DD8D900A97011 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD288B3B200DD8D900A97011 /* Notif Service Ext */;
+			targetProxy = CD288B41200DD8D900A97011 /* PBXContainerItemProxy */;
+		};
 		CD7E955D200D5960001F6475 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CD7E9546200D5960001F6475 /* FirebaseNotifications */;
@@ -580,6 +674,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CD288B45200DD8D900A97011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73TVPW27J7;
+				INFOPLIST_FILE = "Notif Service Ext/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kentonraiford.FirebaseNotifications.Notif-Service-Ext";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD288B46200DD8D900A97011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73TVPW27J7;
+				INFOPLIST_FILE = "Notif Service Ext/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kentonraiford.FirebaseNotifications.Notif-Service-Ext";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CD7E956D200D5960001F6475 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -691,6 +815,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABD3AFD7F80CD138E1D41E49 /* Pods-FirebaseNotifications.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FirebaseNotifications/FirebaseNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -708,6 +833,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 526F73B91EF7AA1316199E19 /* Pods-FirebaseNotifications.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FirebaseNotifications/FirebaseNotifications.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -794,6 +920,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CD288B44200DD8D900A97011 /* Build configuration list for PBXNativeTarget "Notif Service Ext" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD288B45200DD8D900A97011 /* Debug */,
+				CD288B46200DD8D900A97011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CD7E9542200D5960001F6475 /* Build configuration list for PBXProject "FirebaseNotifications" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

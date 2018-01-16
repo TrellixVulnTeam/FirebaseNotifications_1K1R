@@ -19,6 +19,9 @@ function sendNotification(product) {
       body: title + ' for $' + cost,
       sound: 'default',
       mutable_content: 'true'
+    },
+    data: {
+      imageUrl: 'https://i.pinimg.com/736x/ff/8d/86/ff8d866b22181b2bcc926039a8dcad75--mens-shirts-hollister-shirts.jpg'
     }
   }
 
