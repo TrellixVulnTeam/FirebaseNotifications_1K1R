@@ -36,11 +36,15 @@ class AlertService
     static func subscribeAlert(in vc: UIViewController)
     {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        let subscribe = UIAlertAction(title: "Subscribe", style: .default) { (_) in
-            
+        
+        let subscribe = UIAlertAction(title: "Subscribe", style: .default)
+        { (_) in
+            FirebaseMessagingService.shared.subscribe(to: .newProducts)
         }
-        let unsubscribe = UIAlertAction(title: "Unsubscribe", style: .default) { (_) in
-            
+        
+        let unsubscribe = UIAlertAction(title: "Unsubscribe", style: .default)
+        { (_) in
+            FirebaseMessagingService.shared.unsubscribe(from: .newProducts)
         }
         alert.addAction(subscribe)
         alert.addAction(unsubscribe)

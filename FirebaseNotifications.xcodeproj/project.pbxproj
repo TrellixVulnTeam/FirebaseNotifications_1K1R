@@ -13,6 +13,7 @@
 		CD288B31200D846700A97011 /* FirebaseDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B30200D846700A97011 /* FirebaseDatabaseService.swift */; };
 		CD288B33200D8A9700A97011 /* ProductsSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B32200D8A9700A97011 /* ProductsSnapshot.swift */; };
 		CD288B35200D8D0600A97011 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B34200D8D0600A97011 /* ProductsService.swift */; };
+		CD288B37200DAEFA00A97011 /* FirebaseMessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD288B36200DAEFA00A97011 /* FirebaseMessagingService.swift */; };
 		CD7E954B200D5960001F6475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E954A200D5960001F6475 /* AppDelegate.swift */; };
 		CD7E954D200D5960001F6475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E954C200D5960001F6475 /* ViewController.swift */; };
 		CD7E9550200D5960001F6475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7E954E200D5960001F6475 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		CD288B30200D846700A97011 /* FirebaseDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDatabaseService.swift; sourceTree = "<group>"; };
 		CD288B32200D8A9700A97011 /* ProductsSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsSnapshot.swift; sourceTree = "<group>"; };
 		CD288B34200D8D0600A97011 /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
+		CD288B36200DAEFA00A97011 /* FirebaseMessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMessagingService.swift; sourceTree = "<group>"; };
 		CD7E9547200D5960001F6475 /* FirebaseNotifications.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseNotifications.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD7E954A200D5960001F6475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD7E954C200D5960001F6475 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				CD288B2B200D79FF00A97011 /* UserNotificationService.swift */,
 				CD288B30200D846700A97011 /* FirebaseDatabaseService.swift */,
 				CD288B34200D8D0600A97011 /* ProductsService.swift */,
+				CD288B36200DAEFA00A97011 /* FirebaseMessagingService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				CD7E957F200D5EDD001F6475 /* ProductCell.swift in Sources */,
 				CD7E954B200D5960001F6475 /* AppDelegate.swift in Sources */,
 				CD7E957D200D5E99001F6475 /* Product.swift in Sources */,
+				CD288B37200DAEFA00A97011 /* FirebaseMessagingService.swift in Sources */,
 				CD288B33200D8A9700A97011 /* ProductsSnapshot.swift in Sources */,
 				CD7E9581200D64DA001F6475 /* AlertService.swift in Sources */,
 				CD288B31200D846700A97011 /* FirebaseDatabaseService.swift in Sources */,
