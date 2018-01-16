@@ -1,9 +1,29 @@
-const functions = require('firebase-functions');
+let functions = require('firebase-functions')
 let admin = require('firebase-admin')
+admin.initializeApp(functions.config().firebase)
 
-// Create and Deploy Your First Cloud Functions
-// https://firebase.google.com/docs/functions/write-firebase-functions
+exports.announceProduct = functions.database
+  .ref('products/{productId}')
+  .onCreate(event => {
+    let product = event.data.val()
+    sendNotification(product)
+  })
 
-exports.helloWorld = functions.https.onRequest((request, response) => {
- response.send("Hello from Firebase!");
-});
+function sendNotification(product) {
+  let title = product.title
+  let cost = product.cost
+
+  let payload = {
+    notification: {
+      title: 'New Product Available',
+      body: title + ' for $' + cost,
+      sound: 'default',
+      mutable_content: 'true'
+    }
+  }
+
+  console.log(payload)
+
+  let topic = "newProducts"
+  admin.messaging().sendToTopic(topic, payload)
+}
